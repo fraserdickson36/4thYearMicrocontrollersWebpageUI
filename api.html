@@ -1,0 +1,4246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Resources/Favicon.png">
+  
+
+  <title>BigBoiTeam IoT 1.0.0 Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/main.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="relative md:flex lg:flex xl:flex">
+    
+
+
+<input id="burger-menu" type="checkbox" />
+<label for="burger-menu" class="shadow">
+  <div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</label>
+
+<div class="sidebar-panel fixed top-0 left-0 bottom-0 w-64 bg-gray-200 font-sans pt-8 pr-4 pb-4 pl-4">
+  <div class="sidebar-panel__content">
+    
+      <h1 class="text-2xl font-thin">
+        BigBoiTeam IoT 
+    
+    
+    
+    <span>1.0.0</span>
+
+      </h1>
+    
+    <ul class="text-sm mt-10 mt-2">
+      <li class="mb-3">
+        <a class="js-menu-item text-gray-700 no-underline" href="#introduction">Introduction</a>
+      </li>
+      
+        <li class="mb-3">
+          <a class="js-menu-item text-gray-700 no-underline" href="#servers">Servers</a>
+        </li>
+      
+    </ul>
+
+    
+      <h2 class="text-xs uppercase text-gray-500 mt-10 mb-4 font-thin">Operations</h2>
+      <ul class="text-sm mt-2">
+        <!-- With tags in sidebar -->
+        
+          <!--Without tags in sidebar-->
+          
+            <li>
+              
+                <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#operation-publish-system/building/room/trigger/MAC-address">
+                  <span class="bg-blue-600 font-bold h-6 no-underline text-white uppercase p-1 mr-2 rounded" style="height: 21px;font-size: 11px;" title="Publish">
+                    Pub
+                  </span>
+                  
+                    <div style="display:inline-block;">
+                      
+<span class="string-chunk" style="padding-top: 2px;">system/building/room/trigger/MAC-address</span>
+
+                    </div>
+                  
+                </a>
+              
+
+              
+              </a>
+            </li>
+          
+            <li>
+              
+
+              
+                <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#operation-subscribe-system/building/room/action/MAC-address">
+                  <span class="bg-green-600 font-bold no-underline text-white uppercase p-1 mr-2 rounded" style="height: 21px;font-size: 11px;" title="Subscribe">
+                    Sub
+                  </span>
+                  
+                    <div style="display:inline-block;">
+                      
+<span class="string-chunk" style="padding-top: 2px;">system/building/room/action/MAC-address</span>
+
+                    </div>
+                  
+                </a>
+              
+              </a>
+            </li>
+          
+            <li>
+              
+                <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#operation-publish-system/building/room/birth/MAC-address">
+                  <span class="bg-blue-600 font-bold h-6 no-underline text-white uppercase p-1 mr-2 rounded" style="height: 21px;font-size: 11px;" title="Publish">
+                    Pub
+                  </span>
+                  
+                    <div style="display:inline-block;">
+                      
+<span class="string-chunk" style="padding-top: 2px;">system/building/room/birth/MAC-address</span>
+
+                    </div>
+                  
+                </a>
+              
+
+              
+              </a>
+            </li>
+          
+            <li>
+              
+                <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#operation-publish-system/building/room/will/MAC-address">
+                  <span class="bg-blue-600 font-bold h-6 no-underline text-white uppercase p-1 mr-2 rounded" style="height: 21px;font-size: 11px;" title="Publish">
+                    Pub
+                  </span>
+                  
+                    <div style="display:inline-block;">
+                      
+<span class="string-chunk" style="padding-top: 2px;">system/building/room/will/MAC-address</span>
+
+                    </div>
+                  
+                </a>
+              
+
+              
+              </a>
+            </li>
+          
+        
+      </ul>
+
+      <h2 class="text-xs uppercase text-gray-500 mt-10 mb-4 font-thin">Messages</h2>
+      <ul class="text-sm mt-2">
+        
+          <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#message-trigger">
+            <div style="display:inline-block;">
+              
+<span class="string-chunk" style="padding-top: 2px;">trigger</span>
+
+            </div>
+          </a>
+        
+          <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#message-action">
+            <div style="display:inline-block;">
+              
+<span class="string-chunk" style="padding-top: 2px;">action</span>
+
+            </div>
+          </a>
+        
+          <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#message-birth">
+            <div style="display:inline-block;">
+              
+<span class="string-chunk" style="padding-top: 2px;">birth</span>
+
+            </div>
+          </a>
+        
+          <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#message-will">
+            <div style="display:inline-block;">
+              
+<span class="string-chunk" style="padding-top: 2px;">will</span>
+
+            </div>
+          </a>
+        
+      </ul>
+      <h2 class="text-xs uppercase text-gray-500 mt-10 mb-4 font-thin">Downloads</h2>
+      <ul class="text-sm mt-2">
+        
+        <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="#download">
+          <div style="display:inline-block;">
+            
+<span class="string-chunk" style="padding-top: 2px;">Download API</span>
+    
+
+          </div>
+        </a>
+      </ul>
+      <h2 class="text-xs uppercase text-gray-500 mt-10 mb-4 font-thin">Home</h2>
+      <ul class="text-sm mt-2">
+        
+        <a class="js-menu-item flex break-words no-underline text-gray-700 mt-8 sm:mt-8 md:mt-3" href="index.php">
+          <div style="display:inline-block;">
+            
+<span class="string-chunk" style="padding-top: 2px;">Home</span>
+    
+
+          </div>
+        </a>
+      </ul>
+  </div>
+</div>
+
+    <div class="content-panel flex-1 leading-loose z-10">
+      
+
+<div class="center-block p-8">
+  <a name="introduction"></a>
+
+  <h1>BigBoiTeam IoT 
+    
+    
+    
+    <span>1.0.0</span>
+</h1>
+  <div class="leading-normal mb-4">
+    
+    
+  </div>
+
+  <div class="markdown">
+    <p>This document contains the documentation required to describe and understand the BigBoiTeam IoT API. This documentation is for the first production version (version 1.0.0).</p>
+
+  </div>
+
+
+  <div class="leading-normal mb-4">
+    
+  </div>
+</div>
+
+
+
+
+
+
+<a name="servers"></a>
+<div class="center-block p-8">
+
+  <h2 class="mb-4">Servers</h2>
+
+  
+    <div class="shadow bg-gray-200 mb-3 px-4 py-3">
+      <div class="flex">
+        <div>
+          <div class="pr-4 font-mono">
+            
+<span class="string-chunk" >IP 20.56.121.212</span>
+
+
+            
+    
+    <span class="bg-teal-500 font-sans font-bold no-underline text-white uppercase rounded ml-2"
+          style="height: 20px;font-size: 11px;padding: 3px;">mqtt</span>
+    
+
+          </div>
+          <div class="text-xs text-gray-600">
+            <p>This is the address to Azure virtual machine on which the mosquitto broker is hosted.</p>
+
+          </div>
+
+          
+
+    
+
+
+
+        </div>
+      </div>
+
+      
+        <div>
+          
+        </div>
+      
+
+      
+    </div>
+  
+
+</div>
+
+
+
+
+
+
+
+<a name="operations"></a>
+<h2 class="mb-4 ml-8">Operations</h2>
+
+
+  <div class="responsive-container">
+    
+      
+
+<a name="operation-publish-system/building/room/trigger/MAC-address"></a>
+<div class="center-block p-8">
+  <div class="operation pt-8 pb-8">
+    <h3 class="font-mono text-base">
+      
+      <span class="font-mono border border-blue-500 text-blue-500 uppercase p-1 rounded" title="Publish">Pub</span>
+      
+      
+      
+<span class="string-chunk" >system/building/room/trigger/MAC-address</span>
+
+    </h3>
+
+    <div class="mt-4 mb-4 markdown"><p>This topics allows the IoT devices to publish their trigger messages to be read by another client subscribed to the topic</p>
+</div>
+
+    <p class="text-gray-500 text-sm"></p>
+    <div class="mt-4 mb-4 markdown"></div>
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    <p>Accepts the following message:</p>
+    
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">trigger</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="is-open">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >trigger</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The payload is a JSON object to allow for easier processing using JavaScript. The object has 2 key/value pairs. The first pair shows the peripheral type and in some cases its number. The second pair provides information about the trigger generated from the peripheral.</p>
+<p>The JSON object is formated as such {'peripheral': 'peripheralType','trigger':'triggerType'}. It is imporatant to note that only trigger peripherals are allowed for JSON objects sent to and from this topic.</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'peripheral': 'button1','trigger':'pressTime-4'}"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'peripheral': 'potentiometer','trigger':'percentage-056'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Peripheral</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This part of the JSON object provides information about the peripheral type and in some cases peripheral number that generated the trigger. This can be one of the following peripheral types.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >ButtonN</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The possible trigger peripherals for the button type peripherals where N is the button number.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button3"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Potentiometer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The potentiometer is one of the available trigger peripherals supported by the API.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"potentiometer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Thermometer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The thermometer is one of the available trigger peripherals supported by the API.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"thermometer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Trigger</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This part of the JSON object provides information about the type of trigger generated by the peripheral. This can be one of the following trigger types.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Button Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>All the possible message options for the button triggers can be seen below. 'Press-X' is when the button is pressed for an 'X' amount of times (1 or 2). 'PressTime-X' is when the button is pressed for an 'X' amount seconds (2 or 4).</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Press-1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Press-2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PressTime-2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PressTime-4"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Potentiometer Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+             
+            <span
+              class="bg-purple-600 font-bold no-underline text-white rounded lowercase ml-2"
+              style="height: 20px; font-size: 11px; padding: 3px"
+              title="At least 0"
+              >>= 0</span
+            >
+              
+            <span
+              class="bg-purple-600 font-bold no-underline text-white rounded lowercase ml-2"
+              style="height: 20px; font-size: 11px; padding: 3px"
+              title="At most 100"
+              ><= 100</span
+            >
+                   
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The associated payload for a potentiometer trigger is a string containing a percentage between 0% to 100% in one percent increments. The string is formated as follows 'percentage-xxx' where xxx is the integer percentage value.</p>
+</div>
+
+ 
+        <div class="text-xs">Default: 0</div>
+          
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-000"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-001"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-002"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-098"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-099"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-100"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Thermometer Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The thermometer value is sent as a string following a similar format than the potentiometer trigger. The message is is formated as 'temperature-Sxxx'. The 'S' is the sign of the registered temperature (either positive or negative). The temperature then follows the sign in Celcius.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--999"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--998"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--997"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+000"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+001"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+002"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+997"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+998"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+999"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+    
+
+    
+
+<div class="mt-4">
+  
+</div>
+
+
+
+  </div>
+</div>
+
+<div class="right-block p-8">
+  <h4 class="text-lg text-white mb-4">Examples</h4>
+
+  
+  
+
+<form>
+  <h5 class="examples-uid text-orange-600 mt-4">trigger</h5>
+  
+    <div class="payload-examples mb-4 ">
+      <div class="js-prop cursor-pointer  flex property">
+        <span class="px-2 mr-2 text-gray-200 text-sm border rounded focus:outline-none cursor-pointer">Payload</span>
+        
+          <svg class="expand inline align-baseline" version="1.1" viewBox="0 0 24 24" x="0"
+            xmlns="http://www.w3.org/2000/svg" y="0">
+            <polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon>
+          </svg>
+        
+      </div>
+      <div class="children payload-examples mt-4">
+        
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #1</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"{'peripheral': 'button1','trigger':'pressTime-4'}"</code></pre>
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #2</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"{'peripheral': 'potentiometer','trigger':'percentage-056'}"</code></pre>
+          
+        
+      </div>
+    </div>
+  
+
+  
+</form>
+
+
+  
+</div>
+
+
+
+    
+  </div>
+  <div class="responsive-container">
+    
+  </div>
+
+  <div class="responsive-container">
+    
+  </div>
+  <div class="responsive-container">
+    
+      
+
+<a name="operation-subscribe-system/building/room/action/MAC-address"></a>
+<div class="center-block p-8">
+  <div class="operation pt-8 pb-8">
+    <h3 class="font-mono text-base">
+      
+      
+      <span class="font-mono border border-green-600 text-green-600 uppercase p-1 rounded"
+        title="Subscribe">Sub</span>
+      
+      
+<span class="string-chunk" >system/building/room/action/MAC-address</span>
+
+    </h3>
+
+    <div class="mt-4 mb-4 markdown"><p>This topic allows the IoT devices to receive their action messages by subscribing to their individual topic.</p>
+</div>
+
+    <p class="text-gray-500 text-sm"></p>
+    <div class="mt-4 mb-4 markdown"></div>
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    <p>Accepts the following message:</p>
+    
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">action</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="is-open">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >action</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The supported payloads for the action topic are all simple strings to be processed by the target IoT devices. The string is sepparated into two seperate parts. The first part is the peripheral name and the second part which is separated by a dash is the requested action by the peripheral. The action message is composed of 2 sections. The peripheral name (eg. rgbled) and the action (eg. rtime-5). The two elements are joined by a &quot;-&quot;.</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rgbled-red-080-1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rgbled-rtime-5"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"led1-onPerC-50"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Peripheral</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The available peripheral codes can be seen below.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PWM_LED"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"RGB_LED"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Buzzer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Action</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>Peripherals have different possible types of actions associated to them. These are presented here.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >ledX</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The Pulse Width Modulation (PWM) LEDs have 4 different types of actions associated to them. The specific LED is selected through the 'X' part of its name (i.e. led1 for LED 1 for example). The LEDs can be turned off or turn on continuously at a given percentage of brightness, 'xxx' between 000% and 100% in 001% steps. The LED can also be turned on for 'xx' seconds (between 0 and 60 seconds). The LED can also act as a breathing LED with a frequency of 0.16 Hz for 'xx' seconds.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onPerC-xxx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onTime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"breath-xx"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >rgbled</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The RGB LEDs have 11 different types of actions associated with them. The Red, Green and Blue LEDs can have their brightness controlled as a percentage (colour-xxx-Y where 'xxx' is between 000% and 100%). This can be done either by either leaving the other LEDs turned on or by turning off the other LEDs (Y = 1 only the one LED, Y = 0 others stay on). The LEDs can be turned off individually (colour-0). The brightness of all the LEDs can also be controlled simultaneously (bright-xxx). This means that to turn off all the LEDs, the following string can be used (bright-0). The LEDs can also be turned on individually for a xx amont of seconds (xx between 01 and 60 seconds).</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"red-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"green-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"blue-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"red-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"green-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"blue-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"bright-xxx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"bright-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rtime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"gtime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"btime-xx"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Buzzer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"></div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onTime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onOff-xx-yy"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+    
+
+    
+
+<div class="mt-4">
+  
+</div>
+
+
+
+  </div>
+</div>
+
+<div class="right-block p-8">
+  <h4 class="text-lg text-white mb-4">Examples</h4>
+
+  
+  
+
+<form>
+  <h5 class="examples-uid text-orange-600 mt-4">action</h5>
+  
+    <div class="payload-examples mb-4 ">
+      <div class="js-prop cursor-pointer  flex property">
+        <span class="px-2 mr-2 text-gray-200 text-sm border rounded focus:outline-none cursor-pointer">Payload</span>
+        
+          <svg class="expand inline align-baseline" version="1.1" viewBox="0 0 24 24" x="0"
+            xmlns="http://www.w3.org/2000/svg" y="0">
+            <polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon>
+          </svg>
+        
+      </div>
+      <div class="children payload-examples mt-4">
+        
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #1</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"rgbled-red-080-1"</code></pre>
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #2</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"rgbled-rtime-5"</code></pre>
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #3</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"led1-onPerC-50"</code></pre>
+          
+        
+      </div>
+    </div>
+  
+
+  
+</form>
+
+
+  
+</div>
+
+
+
+    
+  </div>
+
+  <div class="responsive-container">
+    
+      
+
+<a name="operation-publish-system/building/room/birth/MAC-address"></a>
+<div class="center-block p-8">
+  <div class="operation pt-8 pb-8">
+    <h3 class="font-mono text-base">
+      
+      <span class="font-mono border border-blue-500 text-blue-500 uppercase p-1 rounded" title="Publish">Pub</span>
+      
+      
+      
+<span class="string-chunk" >system/building/room/birth/MAC-address</span>
+
+    </h3>
+
+    <div class="mt-4 mb-4 markdown"><p>This is the topic on which the IoT device will publish its birth message once for every connection to the network.</p>
+</div>
+
+    <p class="text-gray-500 text-sm"></p>
+    <div class="mt-4 mb-4 markdown"></div>
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    <p>Accepts the following message:</p>
+    
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">birth</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="is-open">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >birth</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The birth message is a JSON object comprised of 4 key/value pairs. These are explained in this section</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MAC Address</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the unique MAC address of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Manufacturer</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the manufacturer name of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MCU</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the type of the main MCU used for the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Device</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the name of the device used.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+    
+
+    
+
+<div class="mt-4">
+  
+</div>
+
+
+
+  </div>
+</div>
+
+<div class="right-block p-8">
+  <h4 class="text-lg text-white mb-4">Examples</h4>
+
+  
+  
+
+<form>
+  <h5 class="examples-uid text-orange-600 mt-4">birth</h5>
+  
+    <div class="payload-examples mb-4 ">
+      <div class="js-prop cursor-pointer  flex property">
+        <span class="px-2 mr-2 text-gray-200 text-sm border rounded focus:outline-none cursor-pointer">Payload</span>
+        
+          <svg class="expand inline align-baseline" version="1.1" viewBox="0 0 24 24" x="0"
+            xmlns="http://www.w3.org/2000/svg" y="0">
+            <polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon>
+          </svg>
+        
+      </div>
+      <div class="children payload-examples mt-4">
+        
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #1</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</code></pre>
+          
+        
+      </div>
+    </div>
+  
+
+  
+</form>
+
+
+  
+</div>
+
+
+
+    
+  </div>
+  <div class="responsive-container">
+    
+  </div>
+
+  <div class="responsive-container">
+    
+      
+
+<a name="operation-publish-system/building/room/will/MAC-address"></a>
+<div class="center-block p-8">
+  <div class="operation pt-8 pb-8">
+    <h3 class="font-mono text-base">
+      
+      <span class="font-mono border border-blue-500 text-blue-500 uppercase p-1 rounded" title="Publish">Pub</span>
+      
+      
+      
+<span class="string-chunk" >system/building/room/will/MAC-address</span>
+
+    </h3>
+
+    <div class="mt-4 mb-4 markdown"><p>After configuration from the IoT device side, the broker will publish the pre-determined message to the topic upon the disconnection of the IoT device to the network.</p>
+</div>
+
+    <p class="text-gray-500 text-sm"></p>
+    <div class="mt-4 mb-4 markdown"></div>
+
+    
+
+    
+
+
+
+
+    
+
+    
+
+    
+
+
+
+    
+    <p>Accepts the following message:</p>
+    
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">will</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="is-open">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >will</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The will message is a JSON object comprised of 4 key/value pairs. These are explained in this section</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MAC Address</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the unique MAC address of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Manufacturer</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the manufacturer name of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MCU</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the type of the main MCU used for the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Device</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the name of the device used.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+    
+
+    
+
+<div class="mt-4">
+  
+</div>
+
+
+
+  </div>
+</div>
+
+<div class="right-block p-8">
+  <h4 class="text-lg text-white mb-4">Examples</h4>
+
+  
+  
+
+<form>
+  <h5 class="examples-uid text-orange-600 mt-4">will</h5>
+  
+    <div class="payload-examples mb-4 ">
+      <div class="js-prop cursor-pointer  flex property">
+        <span class="px-2 mr-2 text-gray-200 text-sm border rounded focus:outline-none cursor-pointer">Payload</span>
+        
+          <svg class="expand inline align-baseline" version="1.1" viewBox="0 0 24 24" x="0"
+            xmlns="http://www.w3.org/2000/svg" y="0">
+            <polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon>
+          </svg>
+        
+      </div>
+      <div class="children payload-examples mt-4">
+        
+          
+            <h6 class="text-xs font-bold text-gray-700">Example #1</h6>
+            <pre class="hljs mb-4 border border-gray-800 rounded"><code>"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</code></pre>
+          
+        
+      </div>
+    </div>
+  
+
+  
+</form>
+
+
+  
+</div>
+
+
+
+    
+  </div>
+  <div class="responsive-container">
+    
+  </div>
+
+
+
+
+
+<a name="messages"></a>
+<h2 class="ml-8 mt-4">Messages</h2>
+
+<div class="responsive-container">
+  <div class="center-block p-8">
+    <div class="all-messages pb-8">
+      
+      <a name="message-trigger"></a>
+      
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    <span class="text-gray-700 font-bold mr-2">#1</span>
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">trigger</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >trigger</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The payload is a JSON object to allow for easier processing using JavaScript. The object has 2 key/value pairs. The first pair shows the peripheral type and in some cases its number. The second pair provides information about the trigger generated from the peripheral.</p>
+<p>The JSON object is formated as such {'peripheral': 'peripheralType','trigger':'triggerType'}. It is imporatant to note that only trigger peripherals are allowed for JSON objects sent to and from this topic.</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'peripheral': 'button1','trigger':'pressTime-4'}"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'peripheral': 'potentiometer','trigger':'percentage-056'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Peripheral</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This part of the JSON object provides information about the peripheral type and in some cases peripheral number that generated the trigger. This can be one of the following peripheral types.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >ButtonN</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The possible trigger peripherals for the button type peripherals where N is the button number.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"button3"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Potentiometer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The potentiometer is one of the available trigger peripherals supported by the API.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"potentiometer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Thermometer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The thermometer is one of the available trigger peripherals supported by the API.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"thermometer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Trigger</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This part of the JSON object provides information about the type of trigger generated by the peripheral. This can be one of the following trigger types.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Button Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>All the possible message options for the button triggers can be seen below. 'Press-X' is when the button is pressed for an 'X' amount of times (1 or 2). 'PressTime-X' is when the button is pressed for an 'X' amount seconds (2 or 4).</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Press-1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Press-2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PressTime-2"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PressTime-4"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Potentiometer Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+             
+            <span
+              class="bg-purple-600 font-bold no-underline text-white rounded lowercase ml-2"
+              style="height: 20px; font-size: 11px; padding: 3px"
+              title="At least 0"
+              >>= 0</span
+            >
+              
+            <span
+              class="bg-purple-600 font-bold no-underline text-white rounded lowercase ml-2"
+              style="height: 20px; font-size: 11px; padding: 3px"
+              title="At most 100"
+              ><= 100</span
+            >
+                   
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The associated payload for a potentiometer trigger is a string containing a percentage between 0% to 100% in one percent increments. The string is formated as follows 'percentage-xxx' where xxx is the integer percentage value.</p>
+</div>
+
+ 
+        <div class="text-xs">Default: 0</div>
+          
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-000"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-001"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-002"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-098"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-099"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"percentage-100"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Thermometer Trigger</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The thermometer value is sent as a string following a similar format than the potentiometer trigger. The message is is formated as 'temperature-Sxxx'. The 'S' is the sign of the registered temperature (either positive or negative). The temperature then follows the sign in Celcius.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--999"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--998"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--997"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature--..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+000"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+001"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+002"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+..."</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+997"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+998"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"temperature-+999"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+      
+      <a name="message-action"></a>
+      
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    <span class="text-gray-700 font-bold mr-2">#2</span>
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">action</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >action</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The supported payloads for the action topic are all simple strings to be processed by the target IoT devices. The string is sepparated into two seperate parts. The first part is the peripheral name and the second part which is separated by a dash is the requested action by the peripheral. The action message is composed of 2 sections. The peripheral name (eg. rgbled) and the action (eg. rtime-5). The two elements are joined by a &quot;-&quot;.</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rgbled-red-080-1"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rgbled-rtime-5"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"led1-onPerC-50"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Peripheral</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The available peripheral codes can be seen below.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"PWM_LED"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"RGB_LED"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"Buzzer"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Action</span
+        >
+          
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string  oneOf 
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>Peripherals have different possible types of actions associated to them. These are presented here.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-200 py-4 rounded"
+    >
+         
+
+ 
+
+
+    
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >0</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >ledX</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The Pulse Width Modulation (PWM) LEDs have 4 different types of actions associated to them. The specific LED is selected through the 'X' part of its name (i.e. led1 for LED 1 for example). The LEDs can be turned off or turn on continuously at a given percentage of brightness, 'xxx' between 000% and 100% in 001% steps. The LED can also be turned on for 'xx' seconds (between 0 and 60 seconds). The LED can also act as a breathing LED with a frequency of 0.16 Hz for 'xx' seconds.</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onPerC-xxx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onTime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"breath-xx"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >1</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >rgbled</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The RGB LEDs have 11 different types of actions associated with them. The Red, Green and Blue LEDs can have their brightness controlled as a percentage (colour-xxx-Y where 'xxx' is between 000% and 100%). This can be done either by either leaving the other LEDs turned on or by turning off the other LEDs (Y = 1 only the one LED, Y = 0 others stay on). The LEDs can be turned off individually (colour-0). The brightness of all the LEDs can also be controlled simultaneously (bright-xxx). This means that to turn off all the LEDs, the following string can be used (bright-0). The LEDs can also be turned on individually for a xx amont of seconds (xx between 01 and 60 seconds).</p>
+</div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"red-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"green-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"blue-xxx-Y"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"red-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"green-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"blue-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"bright-xxx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"bright-0"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"rtime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"gtime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"btime-xx"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+ 
+      
+
+<div
+  class="bg-gray-200 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >2</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >Buzzer</span
+        >
+           
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"></div>
+
+   
+        <div class="text-xs">
+          Enum: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onTime-xx"</span
+          >
+          
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"onOff-xx-yy"</span
+          >
+          
+        </div>
+         
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+       
+    </div>
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+      
+      <a name="message-birth"></a>
+      
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    <span class="text-gray-700 font-bold mr-2">#3</span>
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">birth</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >birth</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The birth message is a JSON object comprised of 4 key/value pairs. These are explained in this section</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MAC Address</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the unique MAC address of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Manufacturer</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the manufacturer name of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MCU</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the type of the main MCU used for the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Device</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the name of the device used.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+    
+
+
+  
+
+ 
+
+
+
+
+</div>
+
+
+      
+      <a name="message-will"></a>
+      
+
+<div class="bg-gray-200 rounded p-4 mt-2">
+  <div class="text-sm text-gray-700 mb-2">
+    
+    <span class="text-gray-700 font-bold mr-2">#4</span>
+    
+    
+      <span class="border text-orange-600 rounded text-s py-0 px-2">will</span>
+    
+  </div>
+  <p class="text-gray-600 text-sm"></p>
+  
+  
+
+<div class="mt-4">
+  
+</div>
+
+
+
+
+  
+  
+
+  <div class="mt-4 mb-4 markdown"></div>
+  
+    
+<div>
+  
+
+<div
+  class="bg-gray-200  rounded"
+>
+  <div class="">
+    <div
+      class="js-prop cursor-pointer py-2 flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Payload</span
+        >
+         
+        <span class="border text-orange-600 rounded text-xs ml-3 py-0 px-2"
+          >will</span
+        >
+         
+        <svg
+          class="expand inline align-baseline"
+          version="1.1"
+          viewBox="0 0 24 24"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "
+          ></polygon>
+        </svg>
+          
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+object   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>The will message is a JSON object comprised of 4 key/value pairs. These are explained in this section</p>
+</div>
+
+    
+        <div class="text-xs">
+          Examples: 
+          <span class="border text-orange-600 rounded ml-1 py-0 px-2"
+            >"{'MAC_Address': '00:0a:95:9d:68:16','Manufacturer':'bigboiteam', 'MCU':'MSP430FR4133', 'Device':'Bathroom RGB Light'}"</span
+          >
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div
+      class="children bg-gray-100 py-4 rounded"
+    >
+           
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MAC Address</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the unique MAC address of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Manufacturer</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the manufacturer name of the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >MCU</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the type of the main MCU used for the device.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+      
+
+<div
+  class="bg-gray-100 pl-8 pr-8 rounded"
+>
+  <div class="">
+    <div
+      class=" flex property"
+    >
+      <div class="pr-4" style="margin-top: -2px; min-width: 25%">
+        <span
+          class="text-sm"
+          style="word-break: break-word"
+          >Device</span
+        >
+            
+      </div>
+
+      <div>
+        <div class="capitalize text-sm text-teal-500 font-bold">
+          
+string   
+          <div class="inline-block">
+                      
+          </div>
+        </div>
+
+        
+
+<div class="text-sm markdown"><p>This is the name of the device used.</p>
+</div>
+
+    
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+    
+
+ 
+
+
+   
+      <p class="pl-6 mb-2 mt-4 text-xs text-gray-700">
+        Additional properties are allowed.
+      </p>
+        
+       
+    </div>
+    
+  </div>
+</div>
+
+
+</div>
+
+  
+  
+
+  
+
+
+
+</div>
+
+
+      
+    </div>
+  </div>
+</div>
+
+<a name="download"></a>
+<div class="center-block p-8">
+
+  <h2 class="mb-4">Download API</h2>
+
+  
+    <div class="shadow bg-gray-200 mb-3 px-4 py-3">
+      <div class="flex">
+        <div>
+          <div class="pr-4 ">
+            
+<p>API is available for download here:</p>
+
+
+            
+    
+    
+    
+
+          </div>
+          <div class="text-xs text-gray-600">
+            <button class="btn btn-secondary mb-3" type="button" onclick="window.location.href='GigaWorkbook.xlsx';">Download</button>
+
+          </div>
+          <div class="pr-4 ">
+            
+            <p>API .yml file download here:</p>
+            
+            
+                        
+                
+                
+                
+            
+             </div>
+          <div class="text-xs text-gray-600">
+              <button class="btn btn-secondary mb-3" type="button" onclick="window.location.href='asyncapi.yml';">Download</button>
+            
+          </div>
+
+          
+
+    
+
+
+
+        </div>
+      </div>
+
+      
+        <div>
+          
+        </div>
+      
+
+      
+    </div>
+  
+
+</div>
+
+
+    </div>
+    <div class="examples-panel absolute top-0 right-0 bottom-0"></div>
+  </div>
+  
+  <script src="js/highlight.min.js" type="application/javascript"></script>
+  <script src="js/main.js" type="application/javascript"></script>
+  
+</body>
+</html>

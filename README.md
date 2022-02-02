@@ -1,9 +1,12 @@
 # 4thYearMicrocontrollersWebsite
+
 New to BigBoiTeam (BBT) and our suite of products? Not to worry, this guide will help you get started in not time.
 
-What is BBT? We are a company striving to reduces the hurdles of customized home automation by providing you with the best hardware possible. However, to give you the freedom you deserve we developed the best web-application there is out there. Our cutting edge platform allows you to connect all your devices together seamlessly with recipes. Recipes are like small programs easy to make that allow your devices to operate together in way that wouldn’t be possible without them. For example, by creating a recipe you are able to have your office light flicker if someone rings the doorbell in case you have your headphones on.
+What is BBT?
+We are a company striving to reduces the hurdles of customized home automation by providing you with the best hardware possible. However, to give you the freedom you deserve we developed the best web-application there is out there. Our cutting edge platform allows you to connect all your devices together seamlessly with recipes. Recipes are like small programs easy to make that allow your devices to operate together in way that wouldn’t be possible without them. For example, by creating a recipe you are able to have your office light flicker if someone rings the doorbell in case you have your headphones on.
 
-Our Available Devices We currently have 6 different devices compatible with our system. These are explained here:
+Our Available Devices
+We currently have 6 different devices compatible with our system. These are explained here:
 
 Thermometer:
 
@@ -27,4 +30,6 @@ Following the same idea as for "Smart LED", we give our users the ability to con
 
 Wall mounted dial with dimmable LEDs:
 
-One of the most common smart devices used in smart homes these days. Created for both MSP430FR4133 and MSP430G2553, this device allows the user to be very precise with brightness of a room. By turning the knob, the user can set up to 10 different brightness levels for the lights.
+One of the most common smart devices used in smart homes these days. Created for both MSP430FR4133 and MSP430G2553, this device allows the user to be very precise with brightness of a room. By turning the knob, the user can set up to 10 different brightness levels for the lights. 
+
+ 
